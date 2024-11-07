@@ -17,6 +17,7 @@
   - [Diagrama de Classes](#diagrama-de-classes)
   - [Diagrama de Sequência](#diagrama-de-sequência)
   - [Wireframe](#wireframe)
+  - [BPMN](#bpmn)
 
 ## Objetivo Geral
 Desenvolver um projeto no âmbito das Tecnologias e Programação de Sistemas de Informação de forma a dar resposta às necessidades de um cliente/empresa.
@@ -87,3 +88,7 @@ Para este projeto decidimos criar uma API REST com o NestJS e uma aplicação We
 ## Wireframe
 
 [Ver Wireframe](https://www.figma.com/board/ctWPAZhsHD9vQiYeFklOpb/Wireframe2) (Work in Progress)
+
+## BPMN
+
+[Ver BPMN](./imgs/BPMN_10%20IMG.png) (Work in Progress)
