@@ -86,4 +86,4 @@ Para este projeto decidimos criar uma API REST com o NestJS e uma aplicação We
 
 ## Wireframe
 
-[Ver Wireframe](https://www.figma.com/board/ctWPAZhsHD9vQiYeFklOpb/Wireframe2)
+[Ver Wireframe](https://www.figma.com/board/ctWPAZhsHD9vQiYeFklOpb/Wireframe2) (Work in Progress)
