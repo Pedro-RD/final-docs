@@ -17,10 +17,12 @@
 
 ### Funcionario
 
-| Campo        | Tipo    | Descrição                | PK  | FK         |
-| ------------ | ------- | ------------------------ | --- | ---------- |
-| idUtilizador | int     | Referência ao utilizador | ✔   | Utilizador |
-| salario      | decimal | Salário do funcionário   |     |            |
+| Campo           | Tipo     | Descrição                | PK  | FK         |
+| --------------- | -------- | ------------------------ | --- | ---------- |
+| idUtilizador    | int      | Referência ao utilizador | ✔   | Utilizador |
+| salario         | decimal  | Salário do funcionário   |     |            |
+| dataAdmissao    | DateTime | Data de admissão         |     |            |
+| dataFimContrato | DateTime | Data de fim de contrato  |     |            |
 
 ### Cuidador
 

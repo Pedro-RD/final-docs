@@ -92,3 +92,5 @@ Para este projeto decidimos criar uma API REST com o NestJS e uma aplicação We
 ## BPMN
 
 [Ver BPMN](./imgs/BPMN_10%20IMG.png) (Work in Progress)
+
+

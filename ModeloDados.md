@@ -20,6 +20,8 @@ erDiagram
     Funcionario {
         int idUtilizador PK, FK
         decimal salario
+        DateTime dataAdmissao
+        DateTime dataFimContrato
     }
 
     Funcionario ||--|O Cuidador: "é"
