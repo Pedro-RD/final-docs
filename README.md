@@ -16,6 +16,7 @@
   - [Dicionario de Dados](#dicionario-de-dados)
   - [Diagrama de Classes](#diagrama-de-classes)
   - [Diagrama de Sequência](#diagrama-de-sequência)
+  - [Wireframe](#wireframe)
 
 ## Objetivo Geral
 Desenvolver um projeto no âmbito das Tecnologias e Programação de Sistemas de Informação de forma a dar resposta às necessidades de um cliente/empresa.
@@ -83,6 +84,6 @@ Para este projeto decidimos criar uma API REST com o NestJS e uma aplicação We
 
 [Ver Diagrama de Sequência](./DiagramasSequencia.md)
 
+## Wireframe
 
-
-
+[Ver Wireframe](https://www.figma.com/board/ctWPAZhsHD9vQiYeFklOpb/Wireframe2)
