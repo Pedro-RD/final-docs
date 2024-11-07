@@ -1,10 +1,6 @@
 # Modelo de Dados
 
 ```mermaid
----
-title: Modelo de Dados
----
-
 erDiagram
     Utilizador {
         int id PK

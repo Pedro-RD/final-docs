@@ -1,4 +1,4 @@
-## Diagrama de Classes
+# Diagrama de Classes
 
 ```mermaid
 classDiagram

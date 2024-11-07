@@ -1,4 +1,4 @@
-# Diagramas de Sequencia
+# Diagramas de Sequência
 
 ## Camas
 
@@ -1047,9 +1047,6 @@ sequenceDiagram
 ### Ver Mensagens
 
 ```mermaid
----
-title: Ver Mensagens
----
 sequenceDiagram
     actor Utilizador as Gestor/Cuidador/Familiar
     participant PaginaMensagens as Página de Mensagens
