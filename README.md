@@ -81,7 +81,7 @@ Para este projeto decidimos criar uma API REST com o NestJS e uma aplicação We
 
 ## Diagrama de Sequência
 
-[Ver Diagrama de Sequência](./DiagramasSequencia.md
+[Ver Diagrama de Sequência](./DiagramasSequencia.md)
 
 
 
