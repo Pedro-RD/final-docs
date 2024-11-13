@@ -31,6 +31,8 @@
 | idUtilizador | int  | Identificador do funcionario associado | ✔   | Funcionario |
 | defaultTurno | int  | Turno padrão para o cuidador           |     | Turno       |
 
+<div class="page"/>
+
 ### Turno
 
 | Campo      | Tipo     | Descrição                    | PK  | FK  |
@@ -40,8 +42,6 @@
 | horaInicio | DateTime | Hora de início do turno      |     |     |
 | horaFim    | DateTime | Hora de término do turno     |     |     |
 
-<div class="page"/>
-
 ### AtribuicaoTurno
 
 | Campo      | Tipo     | Descrição                         | PK  | FK       |
@@ -50,6 +50,8 @@
 | data       | DateTime | Data da atribuição do turno       |     |          |
 | idTurno    | int      | Identificador do turno            |     | Turno    |
 | idCuidador | int      | Identificador do cuidador         |     | Cuidador |
+
+<div class="page"/>
 
 ### FamiliarResidente
 
@@ -135,6 +137,8 @@
 | idResidente                 | int      | Identificador do residente      |     | Residente |
 | nivelDeOxigenioNoSangue     | decimal  | Nível de oxigénio no sangue     |     |           |
 
+<div class="page"/>
+
 ### Mensagem
 
 | Campo       | Tipo     | Descrição                  | PK  | FK         |
@@ -145,7 +149,6 @@
 | dataHora    | DateTime | Data e hora da mensagem    |     |            |
 | idRemetente | int      | Identificador do remetente |     | Utilizador |
 
-<div class="page"/>
 
 ### Resposta
 
@@ -156,6 +159,8 @@
 | dataHora    | DateTime | Data e hora da resposta    |     |            |
 | idMensagem  | int      | Identificador da mensagem  |     | Mensagem   |
 | idRemetente | int      | Identificador do remetente |     | Utilizador |
+
+<div class="page"/>
 
 ### Alerta
 

@@ -88,7 +88,7 @@ erDiagram
         int idResidente FK
     }
 
-    Medicacao ||--|| AdministracaoMedicacao: "tem"
+    Medicacao ||--|{ AdministracaoMedicacao: "tem"
 
     AdministracaoMedicacao {
         int id PK
