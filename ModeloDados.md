@@ -30,7 +30,7 @@ erDiagram
         int id PK
         DateTime data
         int idTurno ENUM
-        int idCuidador FK
+        int idFuncionario FK
     }
 
 
