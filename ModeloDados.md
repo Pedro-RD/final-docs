@@ -24,32 +24,15 @@ erDiagram
         DateTime dataFimContrato
     }
 
-    Funcionario ||--|O Cuidador: "é"
-
-    Cuidador {
-        int idUtilizador FK, PK
-        id  defaultTurno FK
-    }
-
-    Cuidador }|--|| Turno: "tem"
-
-    Cuidador ||--O{ AtribuicaoTurno: "tem"
+    Funcionario ||--O{ AtribuicaoTurno: "tem"
 
     AtribuicaoTurno {
         int id PK
         DateTime data
-        int idTurno FK
+        int idTurno ENUM
         int idCuidador FK
     }
 
-    Turno ||--O{ AtribuicaoTurno: "tem"
-
-    Turno {
-        int id PK
-        string descricao
-        DateTime horaInicio
-        DateTime horaFim
-    }
 
     Utilizador ||--O{ FamiliarResidente: "é"
     FamiliarResidente {
