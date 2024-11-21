@@ -26,22 +26,8 @@ classDiagram
         +decimal salario
         +atualizarSalario()
         +consultarSalario()
-    }
-
-    class Cuidador {
-        +int idUtilizador
-        +int defaultTurno
         +atualizarTurno()
         +consultarHorario()
-    }
-
-    class Turno {
-        +int id
-        +String descricao
-        +DateTime horaInicio
-        +DateTime horaFim
-        +verDadosTurno()
-        +alertasMudancaTurno()
     }
 
     class AtribuicaoTurno {
@@ -52,6 +38,8 @@ classDiagram
         +atribuirTurno()
         +modificarTurno()
         +removerTurno()
+        +verDadosTurno()
+        +alertasMudancaTurno()
     }
 
     class Residente {
@@ -80,12 +68,9 @@ classDiagram
     }
 
     Utilizador <|-- Funcionario : "é"
-    Funcionario <|-- Cuidador : "é"
 
-    Cuidador -- Turno : "tem"
-    Cuidador -- AtribuicaoTurno : "tem"
+    Funcionario -- AtribuicaoTurno : "tem"
 
-    Turno -- AtribuicaoTurno : "tem"
 
     Utilizador -- FamiliarResidente : "é"
     FamiliarResidente -- Residente : "tem"
@@ -98,7 +83,6 @@ classDiagram
     Residente -- RelatorioDeSaude : "tem"
 
     Utilizador -- Mensagem : "tem"
-    Mensagem -- Resposta : "tem"
 
     Alerta -- Utilizador : "tem"
     Residente -- Alerta : "tem"
@@ -174,19 +158,11 @@ classDiagram
         +String conteudo
         +DateTime dataHora
         +int idRemetente
+        +int idMensagem
         +enviarMensagem()
         +responderMensagem()
         +enviarNotificacao()
-    }
-
-    class Resposta {
-        +int id
-        +String conteudo
-        +DateTime dataHora
-        +int idMensagem
-        +int idRemetente
-        + enviarResposta()
-        + enviarNotificacao()
+        +enviarResposta()
     }
 
     class Alerta {
