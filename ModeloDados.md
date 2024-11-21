@@ -137,16 +137,7 @@ erDiagram
         string conteudo
         DateTime dataHora
         int idRemetente FK
-    }
-
-    Resposta }|--|| Mensagem: "tem"
-    Utilizador ||--O{ Resposta: "tem"
-    Resposta {
-        int id PK
-        string conteudo
-        DateTime dataHora
         int idMensagem FK
-        int idRemetente FK
     }
 
     Alerta }|--|| Utilizador: "tem"
