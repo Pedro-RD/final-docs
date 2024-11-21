@@ -20,19 +20,18 @@ erDiagram
     Funcionario {
         int idUtilizador PK, FK
         decimal salario
-        DateTime dataAdmissao
-        DateTime dataFimContrato
+        string dataAdmissao
+        string dataFimContrato
     }
 
     Funcionario ||--O{ AtribuicaoTurno: "tem"
 
     AtribuicaoTurno {
         int id PK
-        DateTime data
-        int idTurno ENUM
-        int idFuncionario FK
+        string data
+        int idTurno "ENUM"
+        int idFuncionario PK, FK
     }
-
 
     Utilizador ||--O{ FamiliarResidente: "é"
     FamiliarResidente {
@@ -45,19 +44,19 @@ erDiagram
     Residente {
         int id PK
         string nome
-        DateTime dataNascimento
-        enum EstadoCivil
+        string dataNascimento
+        string EstadoCivil "enum"
         int NumeroUtente
         string NumeroFiscal
-        enum Mobilidade
-        Enum Dieta 
+        string Mobilidade "enum"
+        string Dieta "enum" 
         string Alergias
         string CuidadosEspeciais
         string RestricoesAlimentares
         string HistoricoClinico
         string Nacionalidade
         decimal Mensalidade
-        enum FrequenciaRelatorio
+        string FrequenciaRelatorio "enum"
         int NumeroCama
     }
 
@@ -75,10 +74,10 @@ erDiagram
 
     AdministracaoMedicacao {
         int id PK
-        DateTime dataHora
+        string dataHora
         string Dosagem
         string Observacoes
-        enum Estado
+        string Estado "enum"
         int idMedicacao FK
         int idCuidador FK
     }
@@ -87,7 +86,7 @@ erDiagram
 
     ConsultaExterna {
         int id PK
-        DateTime dataHora
+        string dataHora
         string descricao
         string observacoes
         int idResidente FK
@@ -97,7 +96,7 @@ erDiagram
 
     RelatorioDeSaude {
         int id PK
-        DateTime dataHora
+        string dataHora
         decimal temperatura
         decimal altura
         decimal peso
@@ -118,7 +117,7 @@ erDiagram
         int id PK
         string assunto
         string conteudo
-        DateTime dataHora
+        string dataHora
         int idRemetente FK
         int idMensagem FK
     }
@@ -126,10 +125,10 @@ erDiagram
     Alerta }|--|| Utilizador: "tem"
     Alerta {
         int id PK
-        enum tipo
-        enum estado
+        string tipo "enum"
+        string estado "enum"
         string descricao
-        DateTime dataHora
+        string dataHora
         int idUtilizador FK
         int idResidente FK
     }
@@ -140,7 +139,7 @@ erDiagram
 
     Pagamento {
         int id PK
-        DateTime data
+        string data
         decimal valor
         string observacoes
         int idResidente FK
